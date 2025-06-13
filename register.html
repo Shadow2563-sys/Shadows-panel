@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Shadow Host</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://files.catbox.moe/5ydrgs.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .register-box {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 40px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 200, 255, 0.4);
+    }
+
+    .register-box h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #222;
+      color: white;
+    }
+
+    .register-box button {
+      background-color: #00bcd4;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .register-box a {
+      display: block;
+      margin-top: 15px;
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .register-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h1>Create Your Account</h1>
+
+    <form>
+      <input type="text" placeholder="Username" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <input type="text" placeholder="Referral Code (optional)" />
+
+      <button type="submit">Register</button>
+
+      <a href="login.html">Already have an account? Sign In</a>
+    </form>
+  </div>
+</body>
+</html>
